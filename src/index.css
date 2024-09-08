@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #bbb;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.account-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.mt-12 {
+  margin-top: 6rem;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* コンポーネント間にスペースを挿入 */
+}
+
+.box {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* それぞれの幅を比率で指定 */
+.box-30 {
+  width: 30%;
+}
+
+.box-40 {
+  width: 40%;
+}
