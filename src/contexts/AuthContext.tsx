@@ -10,6 +10,8 @@ interface AuthContextType {
 }
 
 // OIDCの設定
+
+/*
 const settings = {
   authority: 'http://127.0.0.1:5002',
   client_id: 'app1',
@@ -19,6 +21,18 @@ const settings = {
   post_logout_redirect_uri: 'http://localhost:3000',
   loadUserInfo: false,
 };
+*/
+
+const settings = {
+  authority: 'http://127.0.0.1:8080/realms/master',
+  client_id: 'testclient',
+  redirect_uri: 'http://localhost:3000',
+  response_type: 'code',
+  scope: 'openid',
+  post_logout_redirect_uri: 'http://localhost:3000',
+  loadUserInfo: true,
+};
+
 
 const userManager = new UserManager(settings);
 
@@ -67,6 +81,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     const processCallback = async () => {
       const authenticatedUser = await handleCallback();
+      console.log(authenticatedUser)
       if (authenticatedUser) {
         setStoredToken('access_token', authenticatedUser.access_token ?? '');
         setStoredToken('id_token', authenticatedUser.id_token ?? '');

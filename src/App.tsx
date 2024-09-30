@@ -3,7 +3,8 @@ import Header from './components/Header';
 import VideoPlayer from './components/VideoPlayer';
 import QueueManager from './components/QueueManager';
 import APIManager from './components/APIManager';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import Bank from './components/Bank';
+import { AuthProvider } from './contexts/AuthContext';
 import './output.css'
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <QueueManager />
         </div>
       </div>
+      <Bank />
     </AuthProvider>
   );
 };
