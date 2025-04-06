@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import VideoPlayer from './components/VideoPlayer';
 import { AuthProvider } from './contexts/AuthContext';
-import './output.css'
+//import './output.css'
 
 const App: React.FC = () => {
   return (

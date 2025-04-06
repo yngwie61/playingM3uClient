@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .header {
   position: fixed;
   top: 0;
