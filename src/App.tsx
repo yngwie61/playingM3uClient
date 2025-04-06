@@ -15,14 +15,6 @@ const App: React.FC = () => {
                 <div className="box box-50">
                     <VideoPlayer />
                 </div>
-                {/*
-        <div className="box box-30">
-          <APIManager />
-        </div>
-        <div className="box box-30">
-          <QueueManager />
-        </div>
-        */}
             </div>
         </AuthProvider>
     );
