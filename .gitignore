@@ -26,3 +26,5 @@ package-lock.json
 public/profile.png
 yarn.lock
 node_modules
+src/test/
+src/output.css
